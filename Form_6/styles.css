@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: bisque;
+}
+
+/*html {
+  font-size: 62.5%;
+}*/
+
+.container {
+  justify-content: center;
+  place-self: center center;
+  display: flex;
+  height: 600px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: rgba(228, 55, 190, 0.932);
+  box-shadow: 10px 30px 35px rgb(25, 25, 25, 0.550);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  place-self: center;
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(198, 83, 243, 0.384);
+  box-shadow: 10px 15px 25px rgb(25, 25, 25, 0.550);
+  border-radius: 7px;
+}
+
+label {
+  justify-self: start;
+  height: 40px;
+  font-size: 20px;
+  font-family: sans-serif;
+  margin-left: 15px;
+  color: aliceblue;
+}
+
+
+input {
+  margin: 15px;
+  font-size: 25px;
+  border-radius: 5px;
+  height: 60px;
+  border: none;
+  border-bottom: 1px solid rgb(88, 75, 75);
+  background-color: rgba(102, 51, 153, 0);
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+input::placeholder {
+  color: rgba(179, 174, 174, 0.842);
+  font-size: 16px;
+}
+
+input.user-data:focus {
+  outline: 1pt solid rgba(0, 0, 0, 0.201);
+}
+
+button.login {
+  margin-left: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 60%;
+  height: 60px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 2px solid gray;
+  box-shadow: 10px 5px 5px rgb(25, 25, 25, 0.500);
+}
+
+button.login:hover {
+  background-color: rgba(248, 67, 67, 0.658);
+  color: rgb(232, 232, 239);
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+input.checkbox {
+  height: 20px;
+  width: 20px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.pass-checkbox {
+  display: flex;
+  align-items: center;
+}
